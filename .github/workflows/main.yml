@@ -1,0 +1,18 @@
+ama:  Node.js  CI 
+
+di: 
+  push: 
+    cabang: [ "main" ] 
+  pull_request: 
+    cabang: [ "main" ] 
+
+pekerjaan: 
+  build: 
+
+    run-on:  di-host sendiri 
+
+    langkah-langkah: 
+    -  penggunaan:  tindakan/checkout@v2 
+    -  nama:  Gunakan  Node.js  16.x menggunakan: tindakan/setup-node@v2 dengan : versi node: 16.x - jalankan : npm install - jalankan: npm test - jalankan: pm2 restart nama aplikasi
+       
+  
