@@ -46,7 +46,13 @@
       >
     </v-system-bar>
 
-    <v-app-bar height="80" elevation="0">
+    <v-app-bar
+      height="100"
+      elevation="0"
+      cover
+      image="~/assets/images/appBar.png"
+      class="bg-transparent"
+    >
       <template v-slot:prepend>
         <v-app-bar-nav-icon
           class="d-flex d-sm-none"
@@ -54,9 +60,52 @@
         ></v-app-bar-nav-icon>
       </template>
       <v-container class="pa-0 fill-height">
-        <v-img height="auto" max-width="190" src="/images/logo.png" />
+        <v-img height="70%" max-width="170" src="/images/logo.png" />
+        <v-menu
+        v-for="(menu, index) in menus"
+        :key="index"
+        offset-y
+      >
+        <template v-slot:activator="{ props }">
+          <v-btn
+            text
+            v-bind="props"
+          >
+            {{ menu.name }}
+          </v-btn>
+        </template>
 
-        <v-tabs
+        <!-- Jika menu memiliki nested submenu -->
+        <v-list>
+          <template v-if="menu.nested">
+            <v-menu
+              v-for="(nestedItem, nestedIndex) in menu.nested"
+              :key="nestedIndex"
+              offset-y
+              open-on-hover
+            >
+              <template v-slot:activator="{ props }">
+                <v-list-item
+                  v-bind="props"
+                  @click="goTo(nestedItem.link)"
+                >
+                  <v-list-item-title>{{ nestedItem.name }}</v-list-item-title>
+                </v-list-item>
+              </template>
+            </v-menu>
+          </template>
+
+          <!-- Jika tidak ada nested submenu -->
+          <template v-else>
+            <v-list-item @click="goTo(menu.link)">
+              <v-list-item-title>{{ menu.name }}</v-list-item-title>
+            </v-list-item>
+          </template>
+        </v-list>
+
+      </v-menu>
+
+       <!-- <v-tabs
           v-model="tab"
           class="ml-7 d-sm-none d-md-flex d-none d-sm-flex d-md-none d-lg-flex"
           border="10"
@@ -70,28 +119,8 @@
             class="font-weight-bold text-capitalize"
             >{{ n.name }}</v-tab
           >
-        </v-tabs>
+        </v-tabs>-->
         <v-spacer class="d-sm-none d-md-flex d-none d-sm-flex"></v-spacer>
-       <!-- <v-text-field
-          density="compact"
-          class="mt-5 mx-3"
-          placeholder="Cari Disini"
-          variant="solo"
-        >
-          <template v-slot:append-inner>
-            <v-icon color="primary">mdi-magnify</v-icon>
-          </template>
-        </v-text-field>
-
-        <v-btn
-          @click="UploadCV()"
-          class="bg-primary text-capitalize d-sm-none d-md-flex d-none d-sm-flex"
-          >Submit CV
-
-          <template v-slot:append>
-            <v-icon>mdi-upload</v-icon>
-          </template>
-        </v-btn>-->
       </v-container>
     </v-app-bar>
 
@@ -116,14 +145,13 @@
         </div>
       </template>
     </v-navigation-drawer>
-
+    <Banner />
     <v-main class="bg-grey-lighten-6">
       <ArrowTop />
-      <Banner />
       <NuxtPage />
     </v-main>
 
-    <Footer />
+    <Footer/>
   </v-app>
 </template>
 
@@ -144,6 +172,14 @@ export default {
       {
         name: "Produk",
         link: "/Produk",
+        nested:[
+          {name:'Kulit Tahu',link:'/kulitTahu'},
+          {name:'Kembang Tahu',link:'/kulitTahu'},
+          {name:'Kembang Tahu Bantal',link:'/kulitTahu'},
+          {name:'Kembang Tahu Pita',link:'/kulitTahu'},
+          {name:'Kembang Tahu Batang',link:'/kulitTahu'},
+       
+        ]
       },
 
       {

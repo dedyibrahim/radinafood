@@ -5,27 +5,9 @@
         <v-col cols="12" md="6" sm="6" xs="6" @transition-enter="onEnter" @transition-leave="onLeave">
           <p class="text-h6 font-weight-bold text-black">Why Chose Us</p>
           <p class="text-h4 font-weight-bold text-black">
-            PT Solusi Mitra Pertama
+            Radina Food
           </p>
-          <v-list lines="two">
-            <v-list-item style="min-height: 6px; padding-left: 0px;">
-              <v-list-item-title class="text-wrap text-h6 text-justify">1. Kami Mengembangkan Kerjasama yang saling
-                menguntungkan</v-list-item-title>
-            </v-list-item>
-            <v-list-item style="min-height: 6px; padding-left: 0px;">
-              <v-list-item-title class="text-wrap text-h6 text-justify">2. Tim Kami Profesional di bidangnya.Kami
-                Menekankan pentingnya Berorientasi Pada Hasil yang efekti dan efisien. dan tim kami berkomitmen penuh
-                terhadap klien </v-list-item-title>
-            </v-list-item>
-            <v-list-item style="min-height: 6px; padding-left: 0px;">
-              <v-list-item-title class="text-wrap text-h6 text-justify">3. Mengembankan Karyawan Melalui Training
-                Reguler agar dapat memotivasi diri sendiri untuk bekerja dengan Baik</v-list-item-title>
-            </v-list-item>
-            <v-list-item style="min-height: 6px; padding-left: 0px; ">
-              <v-list-item-title class="text-wrap text-h6 text-justify">4. Manajemen HRD Berpedoman pada peraturan
-                ketenagakerjaan dan peraturan perundang-undangan yang berlaku di Indonesia</v-list-item-title>
-            </v-list-item>
-          </v-list>
+          <p class="text-h6 text-justify mt-6">Produk kami menggunakan kedelai berkualitas tinggi yang diolah secara alami tanpa bahan pengawet. Kami menawarkan beragam produk olahan kedelai yang serbaguna, cocok untuk berbagai jenis hidangan. Dengan kandungan nutrisi yang tinggi, produk kami tidak hanya lezat, tetapi juga sehat dan bergizi, menjadikannya pilihan ideal bagi konsumen yang peduli pada kesehatan. Kami telah lama dipercaya oleh pelanggan karena konsistensi dan kualitas yang selalu terjaga.</p>
         </v-col>
         <v-col cols="12" md="6" sm="6" xs="6">
           <v-img height="auto" class="rounded-lg" src="../public/images/about.jpg" />
