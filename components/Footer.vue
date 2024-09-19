@@ -4,21 +4,16 @@
       <v-container>
         <v-row>
           <v-col cols="12" md="3" sm="12">
-            <p class="text-h4 font-weight-bold">Head Office</p><br>
+            <p class="text-h4 font-weight-bold">Factory Office</p><br>
             <p class="text-left">
-              PERUMAHAN GDC, RUKO WARNA ORANGE LANTAI 2, Jl. Kav Bri No.MOR 12B BLOK D9, Kalibaru, Kec. Cilodong, Kota Depok, Jawa Barat 16414
+             Sumurwangi RT.01 RW.07 Kel.Kayumanis Kec.Tanah Sareal Kota Bogor 
             </p>
           </v-col>
           <v-col cols="12" md="9" sm="12">
             <v-card class="bg-red text-center">
               <v-card-text class="white--text text-h6">
                 <p class="text-justify text-h6">
-                  Selamat datang di PT Solusi Mitra Pertama Kami adalah mitra
-                  terpercaya dalam layanan outsourcing yang memberikan solusi
-                  efisien dan inovatif untuk memenuhi kebutuhan bisnis Anda.
-                  Dengan tim profesional dan kualitas terjamin, kami siap
-                  membantu perusahaan Anda mencapai tujuan bisnis dengan lebih
-                  efektif.
+                  Selamat datang di Kami adalah mitra terpercaya dalam pengolahan kedelai, khususnya dalam produksi kembang tahu dan kulit tahu berkualitas tinggi. Dengan pengalaman dan teknologi modern, kami berkomitmen untuk menyediakan produk berkualitas yang memenuhi standar kesehatan dan kelezatan bagi konsumen.
                 </p></v-card-text
               >
             </v-card>
@@ -147,7 +142,7 @@
         </v-row>
         <hr />
         <v-row class="text-black">
-          <v-col>&copy; 2024 <b>PT Solusi Mitra Pertama </b></v-col>
+          <v-col>&copy; 2024 <b>UD Sumurwangi Jaya </b></v-col>
         </v-row>
       </v-container>
     </v-footer>
@@ -159,8 +154,8 @@ export default {
   data() {
     return {
       items: [
-        { text: "(021) 87351197 ", icon: "mdi-phone" },
-        { text: "Solusimitrapertama@gmail.com", icon: "mdi-mail" },
+        { text: "081289903664 ", icon: "mdi-phone" },
+        { text: "foodradina@gmail.com", icon: "mdi-mail" },
       ],
       items2: [
         { text: "Senin-sabtu <br> Pukul 09:00 - 18:00 WIB", icon: "mdi-clock" },

@@ -68,6 +68,8 @@
       >
         <template v-slot:activator="{ props }">
           <v-btn
+            color="red"
+            class="text-capitalize"
             text
             v-bind="props"
           >
@@ -75,8 +77,8 @@
           </v-btn>
         </template>
 
-        <!-- Jika menu memiliki nested submenu -->
-        <v-list>
+       
+        <v-list v-if="menu.nested">
           <template v-if="menu.nested">
             <v-menu
               v-for="(nestedItem, nestedIndex) in menu.nested"
@@ -86,6 +88,7 @@
             >
               <template v-slot:activator="{ props }">
                 <v-list-item
+                  class="text-red"
                   v-bind="props"
                   @click="goTo(nestedItem.link)"
                 >
@@ -95,31 +98,10 @@
             </v-menu>
           </template>
 
-          <!-- Jika tidak ada nested submenu -->
-          <template v-else>
-            <v-list-item @click="goTo(menu.link)">
-              <v-list-item-title>{{ menu.name }}</v-list-item-title>
-            </v-list-item>
-          </template>
-        </v-list>
+         </v-list>
 
       </v-menu>
 
-       <!-- <v-tabs
-          v-model="tab"
-          class="ml-7 d-sm-none d-md-flex d-none d-sm-flex d-md-none d-lg-flex"
-          border="10"
-          density="compact"
-          color="primary"
-        >
-          <v-tab
-            v-for="n in menus"
-            :to="n.link"
-            slider-color="primary"
-            class="font-weight-bold text-capitalize"
-            >{{ n.name }}</v-tab
-          >
-        </v-tabs>-->
         <v-spacer class="d-sm-none d-md-flex d-none d-sm-flex"></v-spacer>
       </v-container>
     </v-app-bar>
@@ -189,6 +171,9 @@ export default {
     ],
   }),
   methods: {
+    goTo(){
+
+    },
     UploadCV() {
       const link =
         "https://docs.google.com/forms/d/e/1FAIpQLSeMU0MKB_D5HX1ocrTD3QxT-pBoW_abChVkGjXOq96AdzUdfg/viewform?usp=sf_link";

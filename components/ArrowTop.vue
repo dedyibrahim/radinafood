@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     openWhatsAppChat() {
-      const phoneNumber = "6281280318042";
+      const phoneNumber = "6281289903664";
 
       window.open(
         `https://api.whatsapp.com/send?phone=${phoneNumber}&text= Halo ! Saya tertarik untuk berbicara mengenai layanan PT Solusi Mitra Pertama.`

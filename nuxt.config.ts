@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   app: {
    // pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: "raDinaFood - Your Source Of Yummy",
+      title: "RadinaFood - No Food No Yummy",
       link: [
         {
           rel: "stylesheet",
@@ -58,8 +58,8 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
-      name: 'raDinaFood - Your Source Of Yummy',
-      short_name: 'raDinaFood - Your Source Of Yummy',
+      name: 'RadinaFood - No Food No Yummy',
+      short_name: 'RadinaFood - No Food No Yummy',
       theme_color: '#03045Ef',
       icons: [
         {
