@@ -80,9 +80,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-    workbox: {
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-    },
     client: {
       installPrompt: true,
       // you don't need to include this: only for testing purposes
