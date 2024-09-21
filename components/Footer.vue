@@ -4,10 +4,10 @@
       <v-container>
         <v-row>
           <v-col cols="12" md="3" sm="12">
-            <p class="text-h4 font-weight-bold">Factory Office</p><br>
+            <p class="text-h4 font-weight-bold">Head Office</p><br>
             <p class="text-left">
-             Sumurwangi RT.01 RW.07 Kel.Kayumanis Kec.Tanah Sareal Kota Bogor 
-            </p>
+              Perumahan Bojong Permai Blok B2 No.14 Kel.Kemang Kec.Kemang Kabupaten Bogor          
+             </p>
           </v-col>
           <v-col cols="12" md="9" sm="12">
             <v-card class="bg-red text-center">

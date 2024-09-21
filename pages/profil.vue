@@ -2,25 +2,33 @@
   <v-sheet class="bg-white">
     <v-container>
       <v-row class="my-16">
-        <v-col cols="12" md="6" sm="6" xs="6"    @transition-enter="onEnter"
-          @transition-leave="onLeave">
+        <v-col
+          cols="12"
+          md="6"
+          sm="6"
+          xs="6"
+          @transition-enter="onEnter"
+          @transition-leave="onLeave"
+        >
           <p class="text-h6 font-weight-bold text-black">About Us</p>
-          <p class="text-h4 font-weight-bold text-black">
-            PT Solusi Mitra Pertama
-          </p>
+          <p class="text-h4 font-weight-bold text-black">Radina Food</p>
           <br />
           <p class="text-h6 text-grey-darken-4 text-justify">
-            Perusahaan kami bergerak dibidang pengadaan Barang dan Jasa,
-            Khususnya Jasa Outsorcing. <br />
-            Bagi Kami Kepuasan Klien Adalah prioritas yang sangat penting dan
-            kami selalu merespon semua masukan dari klien kami secara serius dan
-            tidak akan ragu mengambil tindakan yang diperlukan untuk menjaga
-            reputasi kami sebagai salah satu perusahaan penyedia jasa outsorcing
-            di Indonesia
+            Kami adalah perusahaan yang bergerak di bidang pengolahan kedelai
+            dengan spesialisasi pada produksi kembang tahu dan kulit tahu
+            berkualitas tinggi. Dengan menggunakan bahan baku pilihan dan proses
+            produksi modern, kami berkomitmen menghadirkan produk yang sehat,
+            lezat, dan bernutrisi bagi konsumen. Kami berfokus pada inovasi dan
+            kualitas untuk memenuhi kebutuhan pasar domestik maupun
+            internasional.
           </p>
         </v-col>
         <v-col cols="12" md="6" sm="6" xs="6">
-          <v-img height="auto" class="rounded-lg" src="../public/images/profile.jpg" />
+          <v-img
+            height="auto"
+            class="rounded-lg"
+            src="../public/images/profile.jpg"
+          />
         </v-col>
       </v-row>
     </v-container>
@@ -30,15 +38,29 @@
     <v-container>
       <v-row class="my-16">
         <v-col cols="12" md="6" sm="12" xs="12">
-             <p class="text-center text-h3 text-black font-weight-bold ">Visi</p>
-              <p class="text-h6 text-justify mt-4">Menjadi Perusahaan Penyedia TAD dan SDM Yang professional Terpercaya, Terpilih dan Berkualitas</p>
+          <p class="text-center text-h3 text-black font-weight-bold">Visi</p>
+          <p class="text-h6 text-justify mt-4">
+            Visi kami adalah menjadi pemimpin dalam industri pengolahan kedelai,
+            khususnya di bidang produksi kembang tahu dan kulit tahu, dengan
+            fokus pada inovasi dan kualitas. Kami berkomitmen untuk menghasilkan
+            produk yang tidak hanya lezat dan bernutrisi, tetapi juga ramah
+            lingkungan dan bermanfaat bagi kesehatan konsumen.
+          </p>
         </v-col>
         <v-col cols="12" md="6" sm="12" xs="12">
-             <p class="text-center text-h3 text-black font-weight-bold">Misi</p>
-             <p class="text-h6 text-justify mt-4">Peningkatan Kualitas, Kuantitas, dan Variasi Produk dengan tetap mempertahankan Input sumber daya yang ada dengan menjalankan proyek yang efisien dari segi waktu dan biaya dengan dukungan tim yang solid.</p>
+          <p class="text-center text-h3 text-black font-weight-bold">Misi</p>
+          <p class="text-h6 text-justify mt-4">
+            Misi kami adalah memberdayakan petani lokal melalui pemanfaatan
+            bahan baku kedelai terbaik, serta mengoptimalkan teknologi modern
+            dalam setiap proses produksi. Kami berusaha untuk memperluas
+            jangkauan pasar, baik domestik maupun internasional, dengan tetap
+            menjaga kualitas, konsistensi, dan keamanan produk. Selain itu, kami
+            berkomitmen untuk menjalankan bisnis dengan integritas, memberikan
+            nilai tambah bagi masyarakat, dan berkontribusi pada pengembangan
+            ekonomi lokal.
+          </p>
         </v-col>
       </v-row>
- 
     </v-container>
   </v-sheet>
 
@@ -48,46 +70,24 @@
         <v-row class="my-16">
           <v-col cols="12" md="12" sm="12" xs="12">
             <p class="text-h5 text-center font-weight-bold text-white">
-              Solusi outsourcing terdepan untuk mempercepat pertumbuhan bisnis Anda. Tim kami ahli dalam mengelola tugas-tugas terkait sumber daya manusia, keuangan, dan teknologi, membebaskan Anda untuk fokus pada inti bisnis Anda.
+              Seperti kembang tahu yang lembut namun berkualitas, kesuksesan
+              lahir dari ketekunan dan inovasi. Dari kedelai sederhana, kami
+              menciptakan sesuatu yang luar biasa.
             </p>
-           
-          </v-col></v-row></v-container></v-sheet>
+          </v-col></v-row
+        ></v-container
+      ></v-sheet
+    >
   </v-parallax>
 
-  <v-sheet class="bg-grey-lighten-3">
-    <v-container>
-      <v-row class="my-16">
-        <v-col cols="12" md="12" sm="12" xs="12">
-          <p class="text-h4 text-center font-weight-bold text-black">
-            Klien Kami
-          </p>
-          <p class="text-h6 text-center text-grey-darken-3">
-            PT Solusi Mitra Pertama telah dipercaya berbagai bisnis lintas
-            industri
-          </p>
-
-          <v-row>
-            <v-col   cols="12" sm="1" xs="1" md="2" v-for="n in 16">
-              <v-hover v-slot="{ isHovering, props }">
-              <v-card class="mx-auto mt-5 elevation-0 bg-transparent my-auto"   v-bind="props"
-                    :elevation="isHovering ? 12 : 2" 
-                    :class="{
-                      'text-black on-hover  animate__animated animate__pulse':
-                        isHovering,
-                    }">
-                  <v-img  width="120px" cover class="rounded-lg my-auto" :src="'/images/client/' + n + '.png'" />
-              </v-card>
-            </v-hover>
-            </v-col>
-          </v-row>
-        </v-col></v-row></v-container></v-sheet>
+  <Distribusi />
 </template>
 
 <script>
 export default {
   methods: {
     onEnter(el, done) {
-      alert("Asdsad")
+      alert("Asdsad");
       this.animateClass = true;
       setTimeout(done, 1000); // Mengatur durasi animasi (1 detik)
     },

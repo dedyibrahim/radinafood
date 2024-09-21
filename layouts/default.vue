@@ -71,6 +71,7 @@
             color="red"
             class="text-capitalize"
             text
+            @click="navigateTo(menu.link)"
             v-bind="props"
           >
             {{ menu.name }}
@@ -90,7 +91,7 @@
                 <v-list-item
                   class="text-red"
                   v-bind="props"
-                  @click="goTo(nestedItem.link)"
+                  @click="navigateTo(nestedItem.link)"
                 >
                   <v-list-item-title>{{ nestedItem.name }}</v-list-item-title>
                 </v-list-item>
