@@ -154,13 +154,13 @@ export default {
       },
       {
         name: "Produk",
-        link: "/Produk",
+        link: "/produk",
         nested:[
-          {name:'Kulit Tahu',link:'/kulitTahu'},
-          {name:'Kembang Tahu',link:'/kulitTahu'},
-          {name:'Kembang Tahu Bantal',link:'/kulitTahu'},
-          {name:'Kembang Tahu Pita',link:'/kulitTahu'},
-          {name:'Kembang Tahu Batang',link:'/kulitTahu'},
+          {name:'Kulit Tahu',link:'/produk'},
+          {name:'Kembang Tahu',link:'/produk'},
+          {name:'Kembang Tahu Bantal',link:'/produk'},
+          {name:'Kembang Tahu Pita',link:'/produk'},
+          {name:'Kembang Tahu Batang',link:'/produk'},
        
         ]
       },
